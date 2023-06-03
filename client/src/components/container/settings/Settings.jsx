@@ -47,7 +47,7 @@ const Settings = () => {
                     <label>Adress:</label>
                     <input type='text' className="user-info" placeholder='Enter Your Adress'/>
                 </div>
-                <button><MdSaveAlt className='icons'/> Save update</button>
+                <button className='button'><MdSaveAlt className='icons'/> <span>Save update</span></button>
             </form>
           </div>
        </div>

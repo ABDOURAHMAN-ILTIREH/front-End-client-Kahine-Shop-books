@@ -98,7 +98,7 @@ const Commentaire = ({setComment, comment}) => {
             <textarea  cols="30" rows="10" placeholder="description"></textarea>
           </div>
           <div>
-            <h3 className="title">Vous avez besoin d'aide ? <Link>Nous contacter</Link></h3>
+            <h3 className="title">Vous avez besoin d'aide ? <Link to="/contactUs">Contact Nous</Link></h3>
           </div>
           <div>
             <button onClick={setHandler}>Envoiyer</button>

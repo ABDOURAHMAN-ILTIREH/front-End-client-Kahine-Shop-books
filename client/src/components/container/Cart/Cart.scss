@@ -7,31 +7,18 @@
     max-width: 1024px;
     margin: 0 auto;
     padding: $padding_conpoments_big;
-
-    .content_cart{
-       display: flex;
-       align-items: flex-start;
-       justify-content: center;
-       margin-bottom: 35px;
-
+    .cart-content{
+        display: flex;
        .box_left{
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: $border_redius-lg;
-
         img{
             width: 300px;
         }
        }
        .box_right{
-        margin-left: 50px;
         .wrapper{
             display: flex;
             flex-direction: column;
-
-
             .title{
                 font-weight: 500;
                 text-transform: capitalize;
@@ -209,12 +196,9 @@
         }
     }
     @media screen and (max-width: 577px) {
-        .content_cart{
+        .cart-content{
             display: flex;
             flex-direction: column;
-           .box_right{
-            margin: 15px 0;
-           }
         }
     }
     @media screen and (max-width:780px){

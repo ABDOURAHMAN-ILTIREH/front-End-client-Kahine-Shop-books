@@ -1,6 +1,7 @@
 import "./footer.scss"
-import image from "../../../image/Image.jpg"
+import image from "../../../image/kahine-logo.png"
 import {FaFacebook,FaInstagram,FaTwitter,FaWhatsapp} from "react-icons/fa"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -16,27 +17,44 @@ const Footer = () => {
         <div className="support">
             <h1>quick links</h1>
             <ul>
-              <li>home</li>
-              <li>books</li>
-              <li>cart shop</li>
-              <li>Features</li>
-              <li>contact</li>
+              <li>
+                <Link to="home">home</Link>
+              </li>
+              <li>
+                <Link to="booksCustomer">books</Link>
+              </li>
+              <li>
+                <Link to="checkout">cart shop</Link>
+              </li>
+              <li>
+                <Link to="contactUs">contactUs</Link>
+              </li>
             </ul>
         </div>
   
         <div className="service">
           <h1>Services</h1>
               <ul>
-                <li>free delivery</li>
-                <li>Q&A</li>
+                <li>
+                  <Link>free delivery</Link>
+                </li>
+                <li>
+                  <Link>Q&R</Link>
+                </li>
               </ul>
         </div>
         <div>
           <h1>about</h1>
               <ul>
-                <li>Abouts Us</li>
-                <li>History</li>
-                <li>Contact</li>
+                <li>
+                  <Link>Abouts Us</Link>
+                </li>
+                <li>
+                  <Link>History</Link>
+                </li>
+                <li>
+                  <Link>Contact</Link>
+                </li>
               </ul>
         </div>
 

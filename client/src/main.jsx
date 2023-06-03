@@ -6,7 +6,6 @@ import { Provider } from 'react-redux';
 import { store } from "./store/store";
 
 // import DarkModeContextProvider
-import  {DarkModeContextProvider}  from './context/Light&Dark';
 import { UserContextProvider } from './context/userContext';
 
 
@@ -15,11 +14,9 @@ root.render(
   <React.StrictMode>
       <BrowserRouter >
         <Provider store={store}>
-          <DarkModeContextProvider>
           <UserContextProvider>
-           <App />
+            <App />
           </UserContextProvider>
-        </DarkModeContextProvider>
         </Provider>
       </BrowserRouter>
   </React.StrictMode>

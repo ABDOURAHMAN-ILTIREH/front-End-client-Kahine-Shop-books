@@ -48,7 +48,7 @@ const Cart = () => {
 
   return (
     <div className="cart">
-       <div className="content_cart" key={product.id}>
+      <div className="cart-content" key={product.id}>
          <div className="box_left">
              <img src={product.image01} alt="" />
          </div>
@@ -73,8 +73,7 @@ const Cart = () => {
                 </div>
             </div>
          </div>
-       </div>
-
+      </div>
        {/* reviews components */}
 
        <div className="wrapper_reviews">

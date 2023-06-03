@@ -1,17 +1,14 @@
 import "./header.scss"
 import { useEffect,useRef, useContext, useState} from "react"
 import { Link, NavLink } from "react-router-dom"
-import image from "../../../image/Image.jpg"
-import {MdClose,MdDarkMode,MdLightMode,MdLogout,MdMenu, MdPerson, MdSettings, MdShoppingCart} from "react-icons/md";
+import image from "../../../image/kahine-logo.png"
+import {MdClose,MdLogout,MdMenu, MdPerson, MdSettings, MdShoppingCart} from "react-icons/md";
 
 // import images
 import image1 from "../../../assets/Users/teacher-1.png";
 
 // import useSelector Hook
 import { useSelector} from 'react-redux';
-
-// import darkmodeContext
-import { DarkModeContext } from "../../../context/Light&Dark"
 
 import { useAuthContext } from "../../../hook/useAuthContext";
 
@@ -52,22 +49,18 @@ const Header = ({Visibility, setCartVisibility}) => {
     }
 
 
-   const scrollRef = useRef()
+   const scrollRef = useRef();
    const Navbar = useRef(null);
    
    // import amount
    const { amount} = useSelector(state => state.cart);
 
    // set useContext
-   const { darkMode, dispatch} = useContext(DarkModeContext)
-
-
   
    const ToggleAdd = ()=> Navbar.current.classList.add('toggle__nav__add');
    const ToggleRemove = ()=> Navbar.current.classList.remove('toggle__nav__add');
 
-  
-   
+
  
    useEffect( ()=>{
      window.addEventListener( "scroll", ()=>{
@@ -122,14 +115,6 @@ const Header = ({Visibility, setCartVisibility}) => {
                      </div>
                   </nav> 
                </div>
-            </div>
-             {/* toggle light buttons */}
-             <div className="toggle_DarkLight">
-               {
-                  darkMode ? 
-                  <MdLightMode className="toggle_light" onClick={()=> dispatch({type:"toggle"})}/> :
-                  <MdDarkMode className="toggle_light" onClick={()=> dispatch({type:"toggle"})}/> 
-               }
             </div>
             {/* sign in logout buttons */}
 

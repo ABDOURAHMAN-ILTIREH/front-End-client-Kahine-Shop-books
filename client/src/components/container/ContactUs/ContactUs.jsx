@@ -1,4 +1,4 @@
-import {MdMyLocation, MdSend } from 'react-icons/md'
+import {MdEmail, MdMyLocation, MdPhone, MdSend } from 'react-icons/md'
 import './ContactUs.css'
 import {FaUser, FaEnvelope, FaPhone, FaBook, FaLocationArrow} from 'react-icons/fa'
 // import image3 from "../../../assets/images/header/contact-img.svg"
@@ -12,9 +12,31 @@ const ContactUs = () => {
          <div className="box_content">
              <div className="box_left">
                 <div className="content_icons">
-                  <MdMyLocation/>
+                  <div className="icon-carry">
+                     <MdMyLocation className='icons'/>
+                  </div>
                   <div className="decscription">
-                    <h1>dkngkh</h1>
+                    <h1>djibouti</h1>
+                    <p>balballah,sheik moussa, streed 14.25</p>
+                  </div>
+                </div>
+                <div className="content_icons">
+                  <div className="icon-carry">
+                     <MdPhone className='icons'/>
+                  </div>
+                  <div className="decscription">
+                    <h1>telephone</h1>
+                    <p>+253 77 -- -- --</p>
+                    <p>+253 21 36 -- --</p>
+                  </div>
+                </div>
+                <div className="content_icons">
+                  <div className="icon-carry">
+                     <MdEmail className='icons'/>
+                  </div>
+                  <div className="decscription">
+                    <h1>email address</h1>
+                    <p>example----@gmail.com</p>
                   </div>
                 </div>
              </div>
@@ -43,7 +65,7 @@ const ContactUs = () => {
                     <label><FaBook /></label>
                         <textarea placeholder='write your message'></textarea>
               </div>
-                    <button className="button"><MdSend className='buttion_icons'/><span>send message</span></button>
+                  <button className="button"><MdSend className='buttion_icons'/><span>send message</span></button>
              </form>
          </div>
    </section>

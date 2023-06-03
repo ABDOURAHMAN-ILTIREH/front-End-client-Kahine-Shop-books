@@ -22,12 +22,17 @@ footer{
             ul{
                 list-style: none;
                 li{
-                    font-size: $font_size;
-                    color: #595353;
                     margin-bottom: 10px;
-                    font-weight: $font_weight;
-                    cursor: pointer;
-                    text-transform: capitalize;
+                    width: max-content;
+                    a{
+                        font-size: $font_size;
+                        color: #595353;
+                        margin-bottom: 10px;
+                        font-weight: $font_weight;
+                        cursor: pointer;
+                        text-transform: capitalize;
+                        text-decoration: none;
+                    }
                     &:hover{
                         text-decoration: underline;
                     }
